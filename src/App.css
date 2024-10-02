@@ -1,0 +1,187 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  z-index: 2;
+  align-items: center;
+  justify-content: space-between;
+  padding:  20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .logo {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .logo img {
+  height: 40px;
+}
+
+.navbar .search-bar {
+  flex-grow: 1;
+  margin: 0 20px;
+  display: flex;
+  max-width: 500px;
+}
+
+.navbar .search-bar input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.navbar .nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .nav-links a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.navbar .nav-links a img {
+  height: 24px;
+}
+
+.navbar .toggle-button {
+  
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.navbar .toggle-button div {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin: 3px 0;
+}
+
+@media (max-width: 768px) {
+  .navbar .search-bar {
+    display: none;
+  }
+
+  .navbar .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: white;
+    width: 100%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  
+  }
+  .nav-links a{
+    margin: 30px 0px;
+  } 
+
+  .navbar .nav-links.active {
+    display: flex;
+  }
+
+  .navbar .toggle-button {
+    display: flex;
+  }
+}
+
+
+
+
+/* for slider  */
+@media (max-width: 431px){
+  .border1{
+   border-bottom: 1px solid gray;
+  }
+  .slider{
+     display: none;
+  }
+  .menu img{
+   height:9vh;
+  }
+  .products img{
+   height: 15vh;
+  }
+
+  .productcart{
+    width: 45vw;
+   
+  }
+  .pimage{
+    height: 30vh;
+  }
+  .cartimg{
+    height: 43vh!important;
+    width: 80vw!important;
+  }
+
+}
+@media (min-width: 432px){
+  
+  .sliderphone{
+     display: none;
+    z-index: -2;
+  }
+  .menu img{
+   height: 15vh;
+  }
+  .products img{
+   height: 28vh;
+  
+  
+  }
+
+  .productcart{
+    width: 20vw;
+  }
+  .pimage{
+    height: 35vh;
+  }
+  
+}
+
+.menu img{
+ aspect-ratio: 3/3;
+}
+.menu p{
+ font-size: 2vh;
+ font-weight: bold;
+ text-align: center;
+ 
+}
+.menu img{
+ display: inline-block;
+}
+.products img{
+ aspect-ratio: 1/1;
+ cursor: pointer;
+ 
+}
+.products p{
+ font-size: 2vh;
+ 
+}
+.heading1{
+  text-align: center;
+}
+
+.menu img{
+  cursor: pointer;
+}
+
+
+.cartimg{
+  height: 30vh;
+  width: 22vw;
+}
+
+
