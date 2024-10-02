@@ -1,5 +1,5 @@
 import React from 'react'
-import star from '../img/staricon.jpg';
+
 import { Link } from 'react-router-dom';
 import {useDispatch} from 'react-redux';
 import { add } from '../store/CartSlice';
@@ -24,7 +24,7 @@ export default function Pitem(props) {
   <div class="card-body">
     <h5 class="card-title fs-6 fw-bold">{props.title}</h5>
     {/* <p class="card-text">{props.description}</p> */}
-    <p class="card-text fs-6"><img src={star}  height={25}/> {props.rating}</p>
+    <p class="card-text fs-6">Rating : {props.rating}</p>
     
     <h5 class="card-title fs-6">Price:{Math.trunc(props.price)}</h5>
     
