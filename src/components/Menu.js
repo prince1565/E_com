@@ -1,11 +1,5 @@
 import React from 'react'
 import { useState,useEffect } from 'react';
-import men1 from '../img/men1.png';
-import womenp from '../img/womenp.png';
-import Pitem from "./Pitem";
-
-import Jewelery from '../img/jewelery.jpg';
-import bike from '../img/bike.jpg';
 import Spinner from './Spinner';
 
 
